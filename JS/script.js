@@ -1,15 +1,7 @@
-//toggle class active
-const navbarnav = document.querySelector(".navbar-nav");
-//ketika hamburger-menu di klik
+// toggle class activ
+const navbarNav = document.querySelector(".navbar-nav");
+
+//ketika hamburger menu di klik
 document.querySelector("#hamburger-menu").onclick = () => {
-  navbarnav.classList.toggle("active");
+  navbarNav.classList.toggle("active");
 };
-
-// klik di luar sidebar untuk menghilangkan menu
-const hamburger = document.querySelector("#hamburger-menu");
-
-document.addEventListener("click", function (e) {
-  if (!hamburger.contains(e.target) && !navbarnav.contains(e.target)) {
-    navbarnav.classList.remove("active");
-  }
-});
